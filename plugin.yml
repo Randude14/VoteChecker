@@ -1,0 +1,39 @@
+name: VoteChecker
+version: 0.1
+main: com.randude14.votechecker.VoteChecker
+arthur: Randude14
+commands:
+    vcheck:
+        description: allows players to check the amount of times they have voted for the server
+    vtop:
+        description: allows players to see top 10 voters
+    vlist:
+        description: allows players to list voters though pages
+    vhelp:
+        description: get commands
+    vtotal:
+        description: get total votes for server
+        
+permissions:
+    votechecker.*:
+        description: 'enables all VoteChecker perms'
+        votechecker.vcheck: false
+        votechecker.vtop: false
+        votechecker.vlist: false
+        votechecker.vhelp: false
+        votechecker.vtotal: false
+    votechecker.vcheck:
+        description: 'enables /vcheck'
+        default: false
+    votechecker.vtop:
+        description: 'enables /vtop'
+        default: false
+    votechecker.vlist:
+        description: 'enables /vlist'
+        default: false
+    votechecker.vhelp:
+        description: 'enables /vhelp'
+        default: false
+    votechecker.vtotal:
+        description: 'enables /vtotal'
+        default: false
